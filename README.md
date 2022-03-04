@@ -16,8 +16,10 @@ THEN the deposits or expenses added while they were offline are added to their t
 
 Indexeddb steps
 
-1. Open a database.
-2. Create an object store in the database.
-3. Start a transaction and make a request to do some database operation, like adding or retrieving data.
-4. Wait for the operation to complete by listening to the right kind of DOM event.
-5. Do something with the results (which can be found on the request object).
+1. Open a database.✔️
+2. Create an object store for future versions of database✔️
+2. add eventlistener for changes to db that will save the database✔️
+2. Create an object store in the database.✔️
+3. Start a transaction and make a request to do some database operation, like adding or retrieving data.✔️
+4. Wait for the operation to complete by listening to the right kind of DOM event.✔️
+5. Do something with the results (which can be found on the request object).✔️
