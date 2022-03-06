@@ -27,6 +27,7 @@ request.onsuccess = function(event) {
     if (navigator.onLine) {
       // we haven't created this yet, but we will soon, so let's comment it out for now
       // uploadPizza();
+      uploadTransactions();
     }
   };
   
@@ -41,21 +42,21 @@ function saveRecord(record) {
   const transaction = db.transaction(['new_transactionsDb'], 'readwrite');
 
   // access the object store for `new_pizza`
-  const pizzaObjectStore = transaction.objectStore('new_transactionsDb');
+  const transactionObjectStore = transaction.objectStore('new_transactionsDb');
 
   // add record to your store with add method
-  pizzaObjectStore.add(record);
+  transactionObjectStore.add(record);
 }
 
-function uploadPizza() {
+function uploadTransactions() {
   // open a transaction on your db
   const transaction = db.transaction(['new_transactionsDb'], 'readwrite');
 
   // access your object store
-  const pizzaObjectStore = transaction.objectStore('new_transactionsDb');
+  const transactionObjectStore = transaction.objectStore('new_transactionsDb');
 
   // get all records from store and set to a variable
- const getAll = pizzaObjectStore.getAll();
+ const getAll = transactionObjectStore.getAll();
 
 
 // upon a successful .getAll() execution, run this function
@@ -78,9 +79,9 @@ getAll.onsuccess = function() {
         // open one more transaction
         const transaction = db.transaction(['new_transactionDb'], 'readwrite');
         // access the new_pizza object store
-        const pizzaObjectStore = transaction.objectStore('new_transactionDb');
+        const transactionObjectStore = transaction.objectStore('new_transactionDb');
         // clear all items in your store
-        pizzaObjectStore.clear();
+        transactionObjectStore.clear();
 
         alert('Back Online,data saved');
       })
