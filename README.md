@@ -25,9 +25,17 @@ Indexeddb steps
 5. Do something with the results (which can be found on the request object).✔️
 
 # webpack minification
-1. install webpack as dev dependency
+1. install webpack as dev dependency✔️
 
-2. add file in webpack.config.js file
+2. add file in webpack.config.js file✔️
+
+# Service Worker
+1. Install service worker✔️
+
+2. activate service worker✔️
+
+3. Fetch service worker✔️
+
 
 # PWA
 

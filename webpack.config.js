@@ -5,11 +5,12 @@ const path = require("path");
 
 // exporting module
 module.exports={
-    entry: './assets/idb.js',
+    entry: './js/script.js',
     output: {
   path: path.resolve(__dirname, 'dist'),
-  filename: 'idb.js'
+  filename: 'main.bundle'
 },
+mode:"development"
 };
 
 

@@ -76,9 +76,9 @@ getAll.onsuccess = function() {
           throw new Error(serverResponse);
         }
         // open one more transaction
-        const transaction = db.transaction(['new_transactionDb'], 'readwrite');
+        const transaction = db.transaction(['new_transactionsDb'], 'readwrite');
         // access the new_pizza object store
-        const transactionObjectStore = transaction.objectStore('new_transactionDb');
+        const transactionObjectStore = transaction.objectStore('new_transactionsDb');
         // clear all items in your store
         transactionObjectStore.clear();
 
@@ -96,4 +96,4 @@ getAll.onsuccess = function() {
 
 
 // listen for app coming back online
-window.addEventListener('online', uploadPizza);
+window.addEventListener('online', uploadTransactions);
