@@ -23,3 +23,15 @@ Indexeddb steps
 3. Start a transaction and make a request to do some database operation, like adding or retrieving data.✔️
 4. Wait for the operation to complete by listening to the right kind of DOM event.✔️
 5. Do something with the results (which can be found on the request object).✔️
+
+# webpack minification
+1. install webpack as dev dependency
+
+2. add file in webpack.config.js file
+
+# PWA
+
+1. Setup PWA Manifest
+
+2. Convert the app to pwa
+

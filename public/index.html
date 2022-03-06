@@ -45,6 +45,15 @@
   <script src="js/index.js"></script>
   <!-- added indexdb script file -->
   <script src="assets/idb.js"></script>
+  <script>
+(function() {
+  if("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("Service Worker registered successfully."))
+      .catch(error => console.log("Service Worker registration failed:", error));
+  }
+})();
+</script>
 </body>
 <script>
 (function() {
