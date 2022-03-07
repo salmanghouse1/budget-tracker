@@ -22,12 +22,6 @@ Indexeddb steps
 6. Wait for the operation to complete by listening to the right kind of DOM event.✔️
 7. Do something with the results (which can be found on the request object).✔️
 
-# webpack minification
-
-1. install webpack as dev dependency✔️
-
-2. add file in webpack.config.js file✔️
-
 # Service Worker
 
 1. Install service worker✔️
@@ -40,4 +34,12 @@ Indexeddb steps
 
 1. Setup PWA Manifest✔️
 
-2. Convert the app to pwa
+# Made by Salman Ghouse
+
+- [github](https://github.com/salmanghouse1)
+
+- [deployed at Heroku](https://tranquil-dawn-47998.herokuapp.com/)
+
+- [Portfolio](http://www.salmanwebdeveloper.com)
+
+- [email](mailto:salmanghouse1@gmail.com)
