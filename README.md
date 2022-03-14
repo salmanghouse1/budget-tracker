@@ -49,3 +49,6 @@ Indexeddb steps
 - [Portfolio](http://www.salmanwebdeveloper.com)
 
 - [email](mailto:salmanghouse1@gmail.com)
+
+# Tech
+HTML, CSS, JS, MongoDb, Indexdb, PWA
